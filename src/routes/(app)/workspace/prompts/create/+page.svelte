@@ -57,7 +57,7 @@
 	onMount(async () => {
 		window.addEventListener('message', async (event) => {
 			if (
-				!['https://openwebui.com', 'https://www.openwebui.com', 'http://localhost:5173'].includes(
+				!['https://make2real.ai', 'https://www.make2real.ai', 'http://localhost:5173'].includes(
 					event.origin
 				)
 			)

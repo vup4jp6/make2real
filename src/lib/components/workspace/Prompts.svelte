@@ -22,9 +22,9 @@
 	let deletePrompt = null;
 
 	const shareHandler = async (prompt) => {
-		toast.success($i18n.t('Redirecting you to OpenWebUI Community'));
+		toast.success($i18n.t('Redirecting you to MAKE2REAL.AI Community'));
 
-		const url = 'https://openwebui.com';
+		const url = 'https://make2real.ai';
 
 		const tab = await window.open(`${url}/prompts/create`, '_blank');
 		window.addEventListener(
@@ -276,12 +276,12 @@
 
 <div class=" my-16">
 	<div class=" text-lg font-semibold mb-3 line-clamp-1">
-		{$i18n.t('Made by OpenWebUI Community')}
+		{$i18n.t('Made by MAKE2REAL.AI Community')}
 	</div>
 
 	<a
 		class=" flex space-x-4 cursor-pointer w-full mb-2 px-3 py-2"
-		href="https://openwebui.com/#open-webui-community"
+		href="https://make2real.ai/"
 		target="_blank"
 	>
 		<div class=" self-center w-10 flex-shrink-0">

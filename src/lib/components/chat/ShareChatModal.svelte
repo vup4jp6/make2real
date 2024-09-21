@@ -30,9 +30,9 @@
 		const _chat = chat.chat;
 		console.log('share', _chat);
 
-		toast.success($i18n.t('Redirecting you to OpenWebUI Community'));
-		const url = 'https://openwebui.com';
-		// const url = 'http://localhost:5173';
+		toast.success($i18n.t('Redirecting you to MAKE2REAL.AI Community'));
+		//const url = 'https://make2real.ai';
+		const url = 'http://localhost:5173';
 
 		const tab = await window.open(`${url}/chats/upload`, '_blank');
 		window.addEventListener(
@@ -143,7 +143,7 @@
 										show = false;
 									}}
 								>
-									{$i18n.t('Share to OpenWebUI Community')}
+									{$i18n.t('Share to MAKE2REAL.AI Community')}
 								</button>
 							{/if}
 

@@ -165,18 +165,10 @@ class SPAStaticFiles(StaticFiles):
 
 
 print(
-    rf"""
-  ___                    __        __   _     _   _ ___ 
- / _ \ _ __   ___ _ __   \ \      / /__| |__ | | | |_ _|
-| | | | '_ \ / _ \ '_ \   \ \ /\ / / _ \ '_ \| | | || | 
-| |_| | |_) |  __/ | | |   \ V  V /  __/ |_) | |_| || | 
- \___/| .__/ \___|_| |_|    \_/\_/ \___|_.__/ \___/|___|
-      |_|                                               
-
-      
+    rf"""      
 v{VERSION} - building the best open-source AI user interface.
 {f"Commit: {WEBUI_BUILD_HASH}" if WEBUI_BUILD_HASH != "dev-build" else ""}
-https://github.com/open-webui/open-webui
+https://make2real.ai
 """
 )
 
@@ -2147,7 +2139,7 @@ async def get_app_latest_release_version():
     try:
         async with aiohttp.ClientSession(trust_env=True) as session:
             async with session.get(
-                "https://api.github.com/repos/open-webui/open-webui/releases/latest"
+                ""
             ) as response:
                 response.raise_for_status()
                 data = await response.json()

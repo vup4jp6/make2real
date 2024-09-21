@@ -136,7 +136,7 @@ async def speech(request: Request, user=Depends(get_verified_user)):
         headers["Authorization"] = f"Bearer {app.state.config.OPENAI_API_KEYS[idx]}"
         headers["Content-Type"] = "application/json"
         if "openrouter.ai" in app.state.config.OPENAI_API_BASE_URLS[idx]:
-            headers["HTTP-Referer"] = "https://openwebui.com/"
+            headers["HTTP-Referer"] = "https://make2real.ai/"
             headers["X-Title"] = "Open WebUI"
         r = None
         try:
@@ -422,7 +422,7 @@ async def generate_chat_completion(
     headers["Authorization"] = f"Bearer {key}"
     headers["Content-Type"] = "application/json"
     if "openrouter.ai" in app.state.config.OPENAI_API_BASE_URLS[idx]:
-        headers["HTTP-Referer"] = "https://openwebui.com/"
+        headers["HTTP-Referer"] = "https://make2real.ai/"
         headers["X-Title"] = "Open WebUI"
 
     r = None

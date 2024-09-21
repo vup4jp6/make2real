@@ -1,8 +1,8 @@
 [project]
 name = "open-webui"
-description = "Open WebUI"
+description = "MAKE2REAL.AI"
 authors = [
-    { name = "Timothy Jaeryang Baek", email = "tim@openwebui.com" }
+    { name = "Timothy Jaeryang Baek", email = "tim@make2real.ai" }
 ]
 license = { file = "LICENSE" }
 dependencies = [
